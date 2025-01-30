@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import filterIcon from "../../../src/assets/Filter.svg";
+import filterIcon from "../../../assets/Filter.svg";
 
 function CityHeader() {
   const [selectedButton, setSelectedButton] = useState("nightlife");

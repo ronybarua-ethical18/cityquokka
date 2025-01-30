@@ -1,5 +1,5 @@
 import React from "react";
-import musicImage from "../../../src/assets/Music.png";
+import musicImage from "../../../assets/Music.png";
 
 export default function CityMusic() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import foodImage from "../../../src/assets/Food.png";
+import foodImage from "../../../assets/Food.png";
 
 export default function CityBody() {
   return (

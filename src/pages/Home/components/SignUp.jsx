@@ -3,7 +3,7 @@ import gmailIcon from "@/assets/Gmail_icon_(2020).svg";
 import facebookIcon from "@/assets/2021_Facebook_icon.svg";
 import appleIcon from "@/assets/Apple_logo_black.svg";
 
-const Signup = () => {
+const SocialSignUp = () => {
   return (
     <div className="px-4">
       <div className="relative bg-[#B388FF] w-full max-w-[1122px] mx-auto rounded-3xl px-4 pt-16 pb-16 text-center">
@@ -80,4 +80,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default SocialSignUp;
