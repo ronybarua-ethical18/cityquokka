@@ -45,8 +45,11 @@ export const router = createBrowserRouter([
         path: "/cityguide/:section",
         element: <CityGuide />,
       },
+      },
     ],
   },
 ]);
+
+export default router;
 
 export default router;
