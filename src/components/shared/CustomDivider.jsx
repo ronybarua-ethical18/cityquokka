@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import dividerIcon from '@/assets/divider.svg';
+import dividerIcon from '../../assets/divider.svg';
 
 const CustomDivider = ({ className = "" }) => {
   return (
