@@ -14,7 +14,6 @@ const Layout = () => (
   </div>
 );
 
-
 export const router = createBrowserRouter([
   // Auth routes without header
   {
@@ -45,11 +44,9 @@ export const router = createBrowserRouter([
         path: "/cityguide/:section",
         element: <CityGuide />,
       },
-      },
     ],
   },
 ]);
 
 export default router;
 
-export default router;
