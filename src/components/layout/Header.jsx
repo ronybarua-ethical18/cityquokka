@@ -12,7 +12,7 @@ export default function Header() {
         <div className="flex gap-2.5 self-end text-lg tracking-tight leading-snug text-black font-[494] max-md:mr-0.5">
           <button 
             onClick={() => navigate("/signup")} 
-            className="grow my-auto cursor-pointer"
+            className="grow my-auto hover:text-[#7642C8] transition-colors"
           >
             SignUp / LogIn
           </button>
