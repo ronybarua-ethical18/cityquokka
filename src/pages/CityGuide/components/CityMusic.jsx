@@ -1,5 +1,5 @@
 import React from "react";
-import musicImage from "../../../src/assets/Music.png";
+import musicImage from "../../../assets/Music.png";
 
 export default function CityMusic() {
   return (
@@ -24,7 +24,7 @@ export default function CityMusic() {
           {/* No rounding on left side */}
           {/* Floating Button */}
           <div className="absolute top-0 left-6 translate-x-0 -translate-y-1/2 z-10 px-3 py-2 bg-white rounded-lg border-black border-solid border-[3px] whitespace-nowrap font-bold">
-            Music
+              MUSIC
           </div>
           <p className="pt-[25px] text-[30px] font-bold text-[#000] text-justify font-[Author] leading-[128%] tracking-[-0.9px] capitalize">
             Global flavors at your fingertips: A foodie's guide to UTS Food

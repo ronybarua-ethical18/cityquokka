@@ -3,9 +3,13 @@ import Home from "@/pages/Home";
 import Business from "@/pages/Business";
 import CityGuide from "@/pages/CityGuide";
 import Header from "@/components/layout/Header";
+import SignUpPage from "../pages/auth/SignUp/SignUpPage";
+import NightlifePage from "@/pages/CityGuide/nightlife/NightlifePage";
+import ArticlePage from "@/pages/CityGuide/Article/ArticlePage";
+import MarketPage from "@/pages/CityGuide/marketplace/MarketPage";
 
 const Layout = () => (
-  <div className="flex flex-col min-h-screen w-full">
+  <div className="flex flex-col min-h-screen w-full bg-white">
     <Header />
     <main className="flex-grow flex justify-center w-full">
       <Outlet />
@@ -14,6 +18,12 @@ const Layout = () => (
 );
 
 export const router = createBrowserRouter([
+  // Auth routes without header
+  {
+    path: "/signup",
+    element: <SignUpPage />,
+  },
+  // Main layout routes with header
   {
     element: <Layout />,
     children: [
@@ -34,9 +44,25 @@ export const router = createBrowserRouter([
         element: <CityGuide />,
       },
       {
+        path: "/cityguide/nightlife",
+        element: <NightlifePage />,
+      },
+      {
+        path: "/cityguide/article",
+        element: <ArticlePage />,
+      },
+      {
         path: "/cityguide/:section",
         element: <CityGuide />,
-      }
+      },
+      {
+        path: "/cityguide/markets",
+        element: <MarketPage />,
+      },
     ],
   },
 ]);
+
+
+export default router;
+

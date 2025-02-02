@@ -4,33 +4,45 @@ import logoIcon from '../../assets/CQ.svg';
 
 export default function Header() {
   const navigate = useNavigate();
-  const location = useLocation(); // Get the current route path
+  const location = useLocation();
 
   return (
-    <div className="flex flex-col w-full bg-white py-4 px-2">
+    <div className="flex flex-col w-full bg-white pb-4 pt-6 mb-4">
       <div className="flex flex-col self-center w-full max-w-[1122px] max-md:max-w-full bg-white">
         <div className="flex gap-2.5 self-end text-lg tracking-tight leading-snug text-black font-[494] max-md:mr-0.5">
-          <div className="grow my-auto">SignUp / LogIn</div>
+          <button 
+            onClick={() => navigate("/signup")} 
+            className="grow my-auto hover:text-[#7642C8] transition-colors font-inter"
+          >
+            SignUp / LogIn
+          </button>
           <button className="flex shrink-0 w-10 h-10 rounded-full bg-zinc-300"></button>
         </div>
-        <img
-          className="object-contain self-center max-w-full aspect-[3.37]"
-          src={logoIcon}
-          alt="CQ"
-          width={357}
-          height={106}
-        />
+        <div className="flex justify-center w-full py-8">
+          <button 
+            onClick={() => navigate("/")}
+            className="cursor-pointer"
+          >
+            <img
+              className="object-contain max-w-full aspect-[3.37]"
+              src={logoIcon}
+              alt="CQ"
+              width={357}
+              height={106}
+            />
+          </button>
+        </div>
         <div className="w-full sm:w-[1120px] h-[4px]" style={{ backgroundColor: "#EFEFEF" }}></div>
 
-        <div className="flex flex-wrap sm:flex-nowrap gap-4 sm:gap-9 self-center mt-5 sm:ml-7 text-2xl leading-snug text-black font-[375] sm:text-base sm:justify-center">
+        <div className="flex flex-wrap sm:flex-nowrap gap-4 sm:gap-9 self-center mt-5 text-2xl leading-snug text-black font-[375] sm:text-base sm:justify-center">
           <button
             onClick={() => navigate("/home")}
             className="flex justify-center items-center whitespace-nowrap"
             style={{
               paddingTop: "10px",
-              fontFamily: "Author",
+              fontFamily: "Inter",
               fontSize: "25px",
-              fontWeight: location.pathname === "/home" ? 700 : 400, // Bold if on /home
+              fontWeight: location.pathname === "/home" ? 700 : 400,
             }}
           >
             Home
@@ -42,9 +54,9 @@ export default function Header() {
             className="flex justify-center items-center whitespace-nowrap"
             style={{
               paddingTop: "10px",
-              fontFamily: "Author",
+              fontFamily: "Inter",
               fontSize: "25px",
-              fontWeight: location.pathname === "/cityguide" ? 700 : 400, // Bold if on /cityguide
+              fontWeight: location.pathname === "/cityguide" ? 700 : 400,
             }}
           >
             City Guide
@@ -56,9 +68,9 @@ export default function Header() {
             className="flex justify-center items-center whitespace-nowrap"
             style={{
               paddingTop: "10px",
-              fontFamily: "Author",
+              fontFamily: "Inter",
               fontSize: "25px",
-              fontWeight: location.pathname === "/business" ? 700 : 400, // Bold if on /business
+              fontWeight: location.pathname === "/business" ? 700 : 400,
             }}
           >
             I&apos;m A Business
