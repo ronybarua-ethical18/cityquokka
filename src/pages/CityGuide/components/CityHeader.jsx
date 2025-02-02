@@ -22,7 +22,7 @@ function CityHeader() {
   };
 
   return (
-    <div className="flex justify-center w-full bg-zinc-100 mb-20">
+    <div className="flex justify-center w-full bg-zinc-100 mb-32">
       <div className="max-w-[1120px] h-[40px] flex items-center justify-center w-full">
         <div className="flex flex-nowrap gap-9 items-center">
           <p className="text-xl text-white hidden sm:block">|</p>
@@ -76,9 +76,9 @@ function CityHeader() {
 
           <Link to="/cityguide/article">
             <button
-              className={`my-auto whitespace-nowrap flex items-center gap-2 ${getFontWeight("arts")}`}
+              className={`my-auto whitespace-nowrap flex items-center gap-2 ${getFontWeight("article")}`}
               style={{ fontFamily: "Inter", fontSize: "18px" }}
-              onClick={() => handleButtonClick("arts")}
+              onClick={() => handleButtonClick("article")}
             >
               <img src={art} alt="art icon" className="w-5 h-5" />
               Article

@@ -5,6 +5,7 @@ import CityGuide from "@/pages/CityGuide";
 import Header from "@/components/layout/Header";
 import SignUpPage from "../pages/auth/SignUp/SignUpPage";
 import NightlifePage from "@/pages/CityGuide/nightlife/NightlifePage";
+import ArticlePage from "@/pages/CityGuide/Article/ArticlePage";
 
 const Layout = () => (
   <div className="flex flex-col min-h-screen w-full bg-white">
@@ -44,6 +45,10 @@ export const router = createBrowserRouter([
       {
         path: "/cityguide/nightlife",
         element: <NightlifePage />,
+      },
+      {
+        path: "/cityguide/article",
+        element: <ArticlePage />,
       },
       {
         path: "/cityguide/:section",
