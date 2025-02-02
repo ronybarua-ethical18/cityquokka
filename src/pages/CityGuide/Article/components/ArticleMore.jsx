@@ -1,6 +1,7 @@
 import React from "react";
 import ArticleContent from "./ArticleContent";
-import SydnetConcert from "@/assets/SydnetConcert.png";
+import sydneyConcert from "../../../../assets/SydneyConcert.png";
+import sydneyConcert2 from "../../../../assets/SydneyConcert2.png";
 
 export default function ArticleMore() {
   const commonContent = {
@@ -17,34 +18,38 @@ export default function ArticleMore() {
     area: "Rooty Hill, The Rocks",
     eventType: "Market",
     price: "Free",
-    image: SydnetConcert,
   };
 
   const articlesData = [
     {
       number: "1",
       title: "Sydney's Christmas Markets",
-      ...commonContent
+      ...commonContent,
+      image: sydneyConcert, // Use the first image for the first article
     },
     {
       number: "2",
       title: "New Year's Eve Fireworks",
-      ...commonContent
+      ...commonContent,
+      image:sydneyConcert2, // Use the second image for the rest
     },
     {
       number: "3",
       title: "NYE Harbour Spectacular",
-      ...commonContent
+      ...commonContent,
+      image: sydneyConcert2, // Use the second image for the rest
     },
     {
       number: "4",
       title: "Christmas Light Festival",
-      ...commonContent
+      ...commonContent,
+      image: sydneyConcert2, // Use the second image for the rest
     },
     {
       number: "5",
       title: "Santa's Christmas Village",
-      ...commonContent
+      ...commonContent,
+      image: sydneyConcert2, // Use the second image for the rest
     }
   ];
 

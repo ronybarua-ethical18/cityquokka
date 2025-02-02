@@ -45,7 +45,7 @@ export default function ArticleContent({
               {additionalText}
             </div>
             <div className="mt-8">
-              <button className="px-6 py-2 bg-[#A97BF3] text-white rounded-lg hover:opacity-90">
+              <button className="px-6 py-2 bg-[#C1C1C1C7] text-black rounded-lg hover:opacity-90 font-bold">
                 Read More
               </button>
             </div>
