@@ -6,6 +6,7 @@ import Header from "@/components/layout/Header";
 import SignUpPage from "../pages/auth/SignUp/SignUpPage";
 import NightlifePage from "@/pages/CityGuide/nightlife/NightlifePage";
 import ArticlePage from "@/pages/CityGuide/Article/ArticlePage";
+import MarketPage from "@/pages/CityGuide/marketplace/MarketPage";
 
 const Layout = () => (
   <div className="flex flex-col min-h-screen w-full bg-white">
@@ -54,9 +55,14 @@ export const router = createBrowserRouter([
         path: "/cityguide/:section",
         element: <CityGuide />,
       },
+      {
+        path: "/cityguide/markets",
+        element: <MarketPage />,
+      },
     ],
   },
 ]);
+
 
 export default router;
 
