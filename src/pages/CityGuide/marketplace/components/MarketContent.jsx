@@ -33,7 +33,7 @@ export default function MarketBody() {
                                 </div>
                             </div>
 
-                            <div className="text-[24px] leading-[135%] tracking-[-0.9px] font-inter font-[281] text-black text-justify capitalize mt-8">
+                            <div className="text-[30px] leading-[135%] tracking-[-0.9px] font-inter font-[281] text-black text-justify capitalize mt-8">
                                 There'll even be more than one nativity lobster, plus a jolly mood and a whole room full of festive cheer. That room is Sydney Coliseum Theatre, where Christmas Actually plays its 2024 Harbour City date on Saturday, December 21.There'll even be more than one nativity lobster, plus a jolly mood and a whole room full of festive cheer. That room is Sydney Coliseum Theatre, where Christmas Actually plays its 2024 Harbour City date on Saturday, December 21. <br />
 
                                 There'll even be more than one nativity lobster, plus a jolly mood and a whole room full of festive cheer. That room is Sydney Coliseum Theatre, where Christmas Actually plays its 2024 Harbour City date on Saturday, December 21.

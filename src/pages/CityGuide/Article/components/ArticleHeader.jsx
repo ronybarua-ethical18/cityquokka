@@ -1,5 +1,5 @@
 import React from "react";
-import MarketHeaderImage from "../../../../assets/MarketHeader.png"
+import exhibit from "../../../../assets/exhibit.png"
 import SocialActions from "@/components/shared/SocialActions"
 
 
@@ -24,10 +24,11 @@ export default function ArticleHeader() {
       <div className="relative w-[956.701px] h-[444.354px] mt-4 max-lg:w-full max-lg:h-auto max-lg:aspect-[2.15]">
         <img
           loading="lazy"
-          src={MarketHeaderImage}
+          src={exhibit}
           className="object-cover absolute inset-0 w-full h-full"
           alt="Article header image"
         />
+
 
         <div className="relative px-3 py-0.5 inline-block rounded-md bg-zinc-300 text-xl tracking-tight leading-none font-[281] text-neutral-500 mt-4">
           Wednesday 30 October 2024

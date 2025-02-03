@@ -7,16 +7,20 @@ import CityHeader from "../components/CityHeader";
 
 
 export default function MarketPage() {
-  return (
-    <div className='flex flex-col w-full max-w-[390px] md:max-w-[1120px] '> <CityHeader />
-            <div className='flex flex-col w-full max-w-[390px] md:max-w-[1120px] px-4 max-md:px-8 bg-white'>
-      
+  return (<>
+    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full px-8 sm:px-0">
+      <CityHeader />
       <MarketBody />
       <MarketContent />
       <MarketMapContent />
       
       
 
-    </div><Footer /></div>
+      
+
+    </div><Footer />
+    </div>
+    </>
   );
 }

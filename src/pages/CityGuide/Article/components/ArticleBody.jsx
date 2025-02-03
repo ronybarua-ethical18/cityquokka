@@ -4,7 +4,7 @@ import ArticleHeader from "./ArticleHeader";
 
 export default function ArticleBody() {
   return (
-    <main className="w-full relative px-4">
+    <main className="w-full relative px-2">
       {/* City Header */}
       <div className="w-full flex justify-center max-sm:hidden">
         

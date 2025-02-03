@@ -9,10 +9,10 @@ import CityMusic from "@/pages/CityGuide/components/CityMusic";
 
 export default function CityGuidePage() {
   return (
-    <div className='flex flex-col w-full max-w-[390px] md:max-w-[1120px] '> <CityHeader />
+    <div className='flex flex-col w-full max-w-[390px] md:max-w-[1120px] '> 
             <div className='flex flex-col w-full max-w-[390px] md:max-w-[1120px] px-4 max-md:px-8 bg-white'>
         
-
+            <CityHeader />
         <CityBody />
         <Carousel />
         <ShowMoreButton />

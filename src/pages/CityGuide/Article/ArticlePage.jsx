@@ -7,10 +7,11 @@ import CityHeader from "../components/CityHeader";
 
 export default function ArticlePage() {
   return (
-    <div className='flex flex-col w-full max-w-[390px] md:max-w-[1120px] '> <CityHeader />
-            <div className='flex flex-col w-full max-w-[390px] md:max-w-[1120px] px-4 max-md:px-8 bg-white'></div>
+    <div className="flex flex-col w-full ">
+      <div className="flex flex-col w-full px-8 sm:px-0"><CityHeader />
       <ArticleBody />
-      <ArticleMore /><div className="px-8"><MarketSidebar /></div>
+      <ArticleMore /></div>
+      <div className="px-8"><MarketSidebar /></div>
       <Footer />
       
       
