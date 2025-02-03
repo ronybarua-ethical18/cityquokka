@@ -5,7 +5,7 @@ import item3 from "@/assets/item1-3.svg";
 
 export default function WhoWeAre() {
   return (
-    <div className="my-16 md:my-28 max-w-full p-8">
+    <div className="my-16 md:my-28 max-w-full p-4">
       {/* Grid Container for All 6 Items */}
       <div className="grid grid-cols-3 gap-2 md:gap-5">
         {/* First Section */}

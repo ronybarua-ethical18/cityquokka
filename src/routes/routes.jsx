@@ -10,7 +10,7 @@ import MarketPage from "@/pages/CityGuide/marketplace/MarketPage";
 
 const Layout = () => (
   <div className="flex flex-col min-h-screen w-full bg-white">
-    <Header />
+    
     <main className="flex-grow flex justify-center w-full">
       <Outlet />
     </main>

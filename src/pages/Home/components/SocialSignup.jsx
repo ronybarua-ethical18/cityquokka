@@ -5,7 +5,7 @@ import appleIcon from "@/assets/Apple_logo_black.svg";
 
 const SocialSignUp = () => {
   return (
-    <div className="p-8">
+    <div className="p-4">
       <div className="relative bg-[#B388FF] w-full max-w-[1122px] mx-auto rounded-3xl px-4 pt-16 pb-16 text-center">
         {/* Top floating button */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
@@ -25,8 +25,8 @@ const SocialSignUp = () => {
           Sign up now for your tailored guide to new experiences
         </h3>
 
-        {/* Bottom floating buttons */}
-        <div className="absolute bottom-0 left-0 transform translate-y-1/2 w-full flex justify-around px-4 sm:px-8">
+        {/* Floating Buttons */}
+        <div className="absolute bottom-0 left-0 w-full flex justify-center gap-4 px-4 sm:px-8 transform translate-y-1/2">
           <button className="flex w-[251px] sm:w-[351px] px-8 py-3 justify-center items-center gap-2 bg-black border-2 border-white rounded-full font-bold font-inter text-white">
             Sign Up
           </button>
@@ -35,6 +35,8 @@ const SocialSignUp = () => {
           </button>
         </div>
       </div>
+
+      {/* Divider & Social Buttons */}
       <div className="mt-8 pt-8">
         <div className="relative">
           <div className="absolute inset-0 flex items-center">
@@ -45,7 +47,7 @@ const SocialSignUp = () => {
           </div>
         </div>
 
-        {/* Social Buttons - Vertical Stack */}
+        {/* Social Buttons */}
         <div className="mt-6 flex flex-col gap-4 items-center">
           <button className="flex w-[252px] sm:w-[352px] px-8 py-3 justify-center items-center gap-3 bg-white border-2 border-black rounded-full text-black font-inter text-base font-medium leading-[150%]">
             <img src={gmailIcon} alt="Google" width={24} height={24} />
