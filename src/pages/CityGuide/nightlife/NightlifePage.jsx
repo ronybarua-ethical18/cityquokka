@@ -6,17 +6,19 @@ import Navbar from "@/components/layout/Navbar";
 
 export default function NightLifePage() {
   return (
-    <div className='flex flex-col w-full max-w-[390px] md:max-w-[1120px] '> <Navbar />
-            <div className='flex flex-col w-full max-w-[390px] md:max-w-[1120px] px-4 max-md:px-8 bg-white'><CityHeader />
-      
-      <NightLifeBody />
-      <NightLifeArticles />
-      
-
-    </div>
-    <Footer />
+    <div className="flex flex-col w-full">
+      <Navbar />
+      <div className="flex flex-col w-full px-4 max-md:px-8 bg-white">
+        <div className="max-w-[1120px] mx-auto w-full">
+          <CityHeader />
+          <NightLifeBody />
+        </div>
+        
+        <NightLifeArticles />
+      </div>
+      <div className="max-w-[1120px] mx-auto w-full md:px-0"> {/* Footer wrapper */}
+        <Footer />
+      </div>
     </div>
   );
 }
-
-
