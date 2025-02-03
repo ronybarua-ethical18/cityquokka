@@ -11,13 +11,12 @@ export default function SignUpCard() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-[#EBEBEB]">
-      <Card className="w-[1299px] h-[600px] bg-[#EBEBEB]">
+    <div className="flex items-center justify-center min-h-screen bg-[#EBEBEB] p-4">
+      <Card className="w-full max-w-[1299px] h-auto bg-[#EBEBEB]">
         <CardContent className="h-full p-6 relative">
           <h2 className="text-2xl font-bold text-center mb-6 mt-10">Sign Up / Log in</h2>
-          
 
-          <div className="grid grid-cols-2 gap-4 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
             <div>
               <Input 
                 type="text" 
@@ -73,14 +72,14 @@ export default function SignUpCard() {
               </label>
             </div>
 
-            <div className="flex justify-between mt-4">
+            <div className="flex flex-col md:flex-row justify-between mt-4 space-y-4 md:space-y-0 md:space-x-4">
               <Button 
-                className="flex h-12 px-8 py-3 justify-center items-center gap-2 rounded-[500px] border border-[#FFB200] bg-[#7642C8] hover:bg-[#7642C8]/90 w-[416px]"
+                className="flex h-12 px-8 py-3 justify-center items-center gap-2 rounded-[500px] border border-[#FFB200] bg-[#7642C8] hover:bg-[#7642C8]/90 w-full md:w-[416px]"
               >
                 Sign Up
               </Button>
               <Button 
-                className="flex h-12 w-[416px] px-8 justify-center items-center gap-2 rounded-[500px] border border-[#7642C8] bg-transparent hover:bg-[#7642C8]/10 text-[#031749]"
+                className="flex h-12 w-full md:w-[416px] px-8 justify-center items-center gap-2 rounded-[500px] border border-[#7642C8] bg-transparent hover:bg-[#7642C8]/10 text-[#031749]"
               >
                 Log in
               </Button>

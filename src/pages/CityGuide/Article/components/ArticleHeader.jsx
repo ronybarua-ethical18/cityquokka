@@ -1,5 +1,5 @@
 import React from "react";
-import exhibit from "../../../../assets/exhibit.png"
+import MarketHeaderImage from "../../../../assets/MarketHeader.png"
 import SocialActions from "@/components/shared/SocialActions"
 
 
@@ -7,8 +7,9 @@ import SocialActions from "@/components/shared/SocialActions"
 export default function ArticleHeader() {
   return (
     <div className="flex flex-col py-0.5 mt-4 w-full text-black font-inter max-md:mt-10 max-md:max-w-full">
+
       <div className="self-start mt-0 text-[40px] font-extrabold tracking-wider leading-[63px] max-md:max-w-full max-md:text-4xl max-md:leading-10">
-        Best things to do in Sydney this December
+      Sydney's Christmas Markets
       </div>
 
       <div className="mt-4 text-[30px] tracking-tight leading-10 font-[596] text-neutral-500 w-[740px] max-lg:w-full">
@@ -23,7 +24,7 @@ export default function ArticleHeader() {
       <div className="relative w-[956.701px] h-[444.354px] mt-4 max-lg:w-full max-lg:h-auto max-lg:aspect-[2.15]">
         <img
           loading="lazy"
-          src={exhibit}
+          src={MarketHeaderImage}
           className="object-cover absolute inset-0 w-full h-full"
           alt="Article header image"
         />

@@ -4,7 +4,7 @@ import MarketHeaderImage1 from "../../../../assets/marktetHeaderImage1.png"; // 
 
 export default function MarketBody() {
     return (
-        <main className="w-full relative pt-20 ">
+        <main className="w-full relative pt-10">
             <div className="w-full flex justify-center max-sm:hidden"></div>
             <div className="max-w-[1120px] mx-auto px-4 max-sm:px-2">
                 <article className="w-[740px] max-md:w-full">

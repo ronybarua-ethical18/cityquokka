@@ -5,7 +5,7 @@ import appleIcon from "@/assets/Apple_logo_black.svg";
 
 const SocialSignUp = () => {
   return (
-    <div className="px-4">
+    <div className="p-8">
       <div className="relative bg-[#B388FF] w-full max-w-[1122px] mx-auto rounded-3xl px-4 pt-16 pb-16 text-center">
         {/* Top floating button */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
@@ -15,7 +15,7 @@ const SocialSignUp = () => {
         </div>
 
         {/* Main content */}
-        <h2 className="text-black text-xl leading-snug font-[490] py-4 px-4 sm:px-[90px] font-inter" style={{fontWeight: 500}}>
+        <h2 className="text-black text-xl leading-snug font-[490] py-4 px-4 sm:px-[90px] font-inter" style={{ fontWeight: 500 }}>
           Unlock Your Sydney: Get personalised recommendations, save your
           favourites, and be the first to know about upcoming events, special
           offers, and more.
@@ -48,30 +48,15 @@ const SocialSignUp = () => {
         {/* Social Buttons - Vertical Stack */}
         <div className="mt-6 flex flex-col gap-4 items-center">
           <button className="flex w-[252px] sm:w-[352px] px-8 py-3 justify-center items-center gap-3 bg-white border-2 border-black rounded-full text-black font-inter text-base font-medium leading-[150%]">
-            <img
-              src={gmailIcon}
-              alt="Google"
-              width={24}
-              height={24}
-            />
+            <img src={gmailIcon} alt="Google" width={24} height={24} />
             Sign Up with Gmail
           </button>
           <button className="flex w-[252px] sm:w-[352px] px-8 py-3 justify-center items-center gap-3 bg-white border-2 border-black rounded-full text-black font-inter text-base font-medium leading-[150%]">
-            <img
-              src={facebookIcon}
-              alt="Facebook"
-              width={24}
-              height={24}
-            />
+            <img src={facebookIcon} alt="Facebook" width={24} height={24} />
             Sign Up with Facebook
           </button>
           <button className="flex w-[252px] sm:w-[352px] px-8 py-3 justify-center items-center gap-3 bg-white border-2 border-black rounded-full text-black font-inter text-base font-medium leading-[150%]">
-            <img
-              src={appleIcon}
-              alt="Apple"
-              width={24}
-              height={24}
-            />
+            <img src={appleIcon} alt="Apple" width={24} height={24} />
             Sign Up with Apple
           </button>
         </div>
