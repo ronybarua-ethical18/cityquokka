@@ -5,8 +5,8 @@ import CityHeader from "../components/CityHeader";
 
 export default function NightLifePage() {
   return (
-    <div className='flex flex-col w-full max-w-[390px] md:max-w-[1120px] '> <CityHeader />
-            <div className='flex flex-col w-full max-w-[390px] md:max-w-[1120px] px-4 max-md:px-8 bg-white'>
+    <div className='flex flex-col w-full max-w-[390px] md:max-w-[1120px] '> 
+            <div className='flex flex-col w-full max-w-[390px] md:max-w-[1120px] px-4 max-md:px-8 bg-white'><CityHeader />
       
       <NightLifeBody />
       <NightLifeArticles />
