@@ -12,12 +12,12 @@ export default function CityMusic() {
           </div>
           <div className="flex flex-col justify-between h-full">
             <div>
-              <p className="pt-[25px] text-[30px] font-bold text-[#000] text-justify font-[Author] leading-[128%] tracking-[-0.9px] capitalize">
+              <p className="pt-[25px] text-[30px] font-bold text-[#000] text-justify font-inter leading-[128%] tracking-[-0.9px] capitalize">
                 Global flavors at your fingertips: A foodie's guide to UTS Food
                 outlets
               </p>
               <br />
-              <p className="text-[18px] font-[375] text-[#000] text-justify font-[Author] leading-[128%] tracking-[-0.54px] capitalize">
+              <p className="text-[18px] font-[375] text-[#000] text-justify font-inter leading-[128%] tracking-[-0.54px] capitalize">
                 Discover places and find a variety of global cuisines to satisfy
                 your cravings all in the heart of UTS buildings. Discover places and
                 find a variety of global cuisines to satisfy your cravings all in
