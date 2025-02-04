@@ -12,7 +12,7 @@ export default function ArticleContent({
   area = "Rooty Hill, The Rocks",
   eventType = "Market",
   price = "Free",
-  description = "oliday cheer like a festive Christmas market, and Sydney offers some of the best. Stroll through The Rocks Christmas Markets, where you can browse unique gifts from local artisans, taste delicious holiday treats, and enjoy live music.",
+  description = "Holiday cheer like a festive Christmas market, and Sydney offers some of the best. Stroll through The Rocks Christmas Markets, where you can browse unique gifts from local artisans, taste delicious holiday treats, and enjoy live music.",
   topPicks = [
     "The Rocks Christmas Markets",
     "The QVB Building: Marvel at the grand 24-meter Christmas tree adorned with Swarovski crystals."
@@ -20,13 +20,13 @@ export default function ArticleContent({
   additionalText = "There'll even be more than one nativity lobster, plus a jolly mood and a whole room full of festive cheer. That room is Sydney Coliseum Theatre, where Christmas Actually plays its 2024"
 }) {
   return (
-    <div className="mt-12 max-w-full w-[957px] max-md:mt-10">
-      <div className="flex gap-5 max-md:flex-col">
-        <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-          <div className="flex flex-col grow font-[281] max-md:mt-10 max-md:max-w-full">
-            <div className="text-3xl tracking-tighter leading-10 text-black max-md:max-w-full">
+    <div className="mt-12 max-w-full w-full px-4 sm:px-6 lg:px-12">
+      <div className="flex gap-5 flex-col lg:flex-row">
+        <div className="flex flex-col w-full lg:w-6/12">
+          <div className="flex flex-col grow font-[281] mt-10">
+            <div className="text-3xl tracking-tighter leading-10 text-black">
               <span className="text-[50px] text-[#B8B8B8] font-inter font-[494] leading-[128%] tracking-[-1.5px] text-justify capitalize">{number}.&nbsp; </span>
-              <span className="font-[494] inline-block w-[346.605px] h-[44px] flex-shrink-0 rounded-[6px] bg-[#EBEBEB] px-2 py-1">{title}</span>
+              <span className="font-[494] inline-block w-full lg:w-[346.605px] h-[44px] flex-shrink-0 rounded-[6px] bg-[#EBEBEB] px-2 py-1">{title}</span>
               <br />
               <span className="text-2xl leading-10"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nothing says {description}</span>
               <br />
@@ -41,7 +41,7 @@ export default function ArticleContent({
                 ))}
               </ul>
             </div>
-            <div className="mt-7 text-2xl tracking-tighter leading-8 text-neutral-500 max-md:mr-0.5 max-md:max-w-full">
+            <div className="mt-7 text-2xl tracking-tighter leading-8 text-neutral-500">
               {additionalText}
             </div>
             <div className="mt-8">
@@ -51,33 +51,32 @@ export default function ArticleContent({
             </div>
           </div>
         </div>
-        <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
-          <div className="flex flex-col self-stretch my-auto w-full leading-none text-black font-[281] max-md:mt-10 max-md:max-w-full items-end">
+        <div className="flex flex-col mt-5 lg:mt-0 lg:ml-5 w-full lg:w-6/12">
+          <div className="flex flex-col self-stretch my-auto w-full leading-none text-black font-[281] items-end">
             <div className="flex justify-end mb-4">
               <SocialActions />
             </div>
-            <div className="flex relative flex-col items-start pt-2 pb-72 mt-3 max-w-full text-xl tracking-tight rounded-md min-h-[320px] w-[422px] max-md:pr-5 max-md:pb-24">
+            <div className="relative flex flex-col items-start pt-2 pb-72 mt-3 w-full text-xl tracking-tight rounded-md min-h-[320px] max-w-full">
               <img
                 loading="lazy"
                 src={image}
-                className="object-cover absolute inset-0 size-full"
+                className="object-cover absolute inset-0 w-full h-full"
                 alt={title}
               />
-
-              <div className="flex relative flex-col pt-0.5 pb-2 pl-3.5 -mb-14 max-w-full bg-green-500 rounded-md w-[225px] max-md:mb-2.5">
+              <div className="flex relative flex-col pt-0.5 pb-2 pl-3.5 -mb-14 bg-green-500 rounded-md w-full max-w-[225px]">
                 <div className="self-start mr-0">
                   {date} <span className="font-[375]">{location}</span>
                 </div>
               </div>
             </div>
-            <div className="mt-5 text-2xl tracking-tighter leading-10 max-md:max-w-full w-[422px]">
+            <div className="mt-5 text-2xl tracking-tighter leading-10 w-full lg:w-[422px]">
               <span className="font-[494] text-neutral-500">Date: </span>
               <span className="text-neutral-500">{eventDate}</span>
               <br />
               <span className="font-[494] text-neutral-500">Place: </span>
               <span className="text-neutral-500">{address} </span>
               <a
-                href=""
+                href="#"
                 className="underline text-neutral-500"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -108,7 +107,7 @@ export default function ArticleContent({
         </div>
       </div>
       <div className="h-[50px]"></div>
-      <div className="w-[960px] h-[4px] bg-[#EFEFEF]"></div>
+      <div className="w-full h-[4px] bg-[#EFEFEF] max-w-[300px] mx-auto sm:max-w-[300px]"></div>
     </div>
   );
-} 
+}

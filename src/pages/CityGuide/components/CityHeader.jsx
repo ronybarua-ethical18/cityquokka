@@ -22,10 +22,12 @@ function CityHeader() {
   };
 
   return (
-    <div className="flex justify-center w-full bg-zinc-100 mb-32">
+    <div className="flex justify-center w-full bg-zinc-100 mb-16">
       <div className="max-w-[1120px] h-[40px] flex items-center justify-center w-full">
         <div className="flex flex-nowrap gap-9 items-center">
           <p className="text-xl text-white hidden sm:block">|</p>
+          
+          {/* Nightlife Button */}
           <Link to="/cityguide/nightlife">
             <button
               className={`my-auto whitespace-nowrap flex items-center gap-2 ${getFontWeight("nightlife")}`}
@@ -33,11 +35,12 @@ function CityHeader() {
               onClick={() => handleButtonClick("nightlife")}
             >
               <img src={nightlife} alt="nightlife icon" className="w-5 h-5" />
-              Nightlife
+              <span className="hidden sm:inline-block">Nightlife</span>
             </button>
           </Link>
           <p className="text-xl text-white hidden sm:block">|</p>
           
+          {/* Sport Button */}
           <Link to="/cityguide/sport">
             <button
               className={`my-auto whitespace-nowrap flex items-center gap-2 ${getFontWeight("sport")}`}
@@ -45,11 +48,12 @@ function CityHeader() {
               onClick={() => handleButtonClick("sport")}
             >
               <img src={sport} alt="sport icon" className="w-5 h-5" />
-              Sport
+              <span className="hidden sm:inline-block">Sport</span>
             </button>
           </Link>
           <p className="text-xl text-white hidden sm:block">|</p>
 
+          {/* Markets Button */}
           <Link to="/cityguide/markets">
             <button
               className={`my-auto whitespace-nowrap flex items-center gap-2 ${getFontWeight("markets")}`}
@@ -57,11 +61,12 @@ function CityHeader() {
               onClick={() => handleButtonClick("markets")}
             >
               <img src={markets} alt="markets icon" className="w-5 h-5" />
-              Markets
+              <span className="hidden sm:inline-block">Markets</span>
             </button>
           </Link>
           <p className="text-xl text-white hidden sm:block">|</p>
 
+          {/* Entertainment Button */}
           <Link to="/cityguide/entertainment">
             <button
               className={`my-auto whitespace-nowrap flex items-center gap-2 ${getFontWeight("entertainment")}`}
@@ -69,11 +74,12 @@ function CityHeader() {
               onClick={() => handleButtonClick("entertainment")}
             >
               <img src={entertainment} alt="entertainment icon" className="w-5 h-5" />
-              Entertainment
+              <span className="hidden sm:inline-block">Entertainment</span>
             </button>
           </Link>
           <p className="text-xl text-white hidden sm:block">|</p>
 
+          {/* Article Button */}
           <Link to="/cityguide/article">
             <button
               className={`my-auto whitespace-nowrap flex items-center gap-2 ${getFontWeight("article")}`}
@@ -81,7 +87,7 @@ function CityHeader() {
               onClick={() => handleButtonClick("article")}
             >
               <img src={art} alt="art icon" className="w-5 h-5" />
-              Article
+              <span className="hidden sm:inline-block">Article</span>
             </button>
           </Link>
           <p className="text-xl text-white hidden sm:block">|</p>

@@ -7,8 +7,9 @@ import SocialActions from "@/components/shared/SocialActions"
 export default function ArticleHeader() {
   return (
     <div className="flex flex-col py-0.5 mt-4 w-full text-black font-inter max-md:mt-10 max-md:max-w-full">
+
       <div className="self-start mt-0 text-[40px] font-extrabold tracking-wider leading-[63px] max-md:max-w-full max-md:text-4xl max-md:leading-10">
-        Best things to do in Sydney this December
+      Sydney's Christmas Markets
       </div>
 
       <div className="mt-4 text-[30px] tracking-tight leading-10 font-[596] text-neutral-500 w-[740px] max-lg:w-full">
@@ -27,6 +28,7 @@ export default function ArticleHeader() {
           className="object-cover absolute inset-0 w-full h-full"
           alt="Article header image"
         />
+
 
         <div className="relative px-3 py-0.5 inline-block rounded-md bg-zinc-300 text-xl tracking-tight leading-none font-[281] text-neutral-500 mt-4">
           Wednesday 30 October 2024

@@ -1,17 +1,17 @@
-import React from "react";
-
 import Footer from "@/components/layout/Footer";
 import CityHeader from "@/pages/CityGuide/components/CityHeader";
 import Carousel from "@/components/shared/Carousel";
 import ShowMoreButton from '@/components/shared/ShowMoreButton';
 import CityBody from "@/pages/CityGuide/components/CityBody";
 import CityMusic from "@/pages/CityGuide/components/CityMusic";
+import Navbar from "@/components/layout/Navbar";
 
 export default function CityGuidePage() {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
-      <div className="flex flex-col self-center w-full max-w-[1120px] max-md:max-w-full bg-white flex-grow">
-        <CityHeader />
+    <div className='flex flex-col w-full max-w-[390px] md:max-w-[1120px] '> <Navbar />
+            <div className='flex flex-col w-full max-w-[390px] md:max-w-[1120px] px-2 max-md:px-4 bg-white'>
+            
+        <CityHeader/>
         <CityBody />
         <Carousel />
         <ShowMoreButton />

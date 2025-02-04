@@ -2,15 +2,17 @@ import { createBrowserRouter, Outlet } from "react-router-dom";
 import Home from "@/pages/Home";
 import Business from "@/pages/Business";
 import CityGuide from "@/pages/CityGuide";
-import Header from "@/components/layout/Header";
 import SignUpPage from "../pages/auth/SignUp/SignUpPage";
 import NightlifePage from "@/pages/CityGuide/nightlife/NightlifePage";
 import ArticlePage from "@/pages/CityGuide/Article/ArticlePage";
 import MarketPage from "@/pages/CityGuide/marketplace/MarketPage";
-
+import EntertainmentPage from "@/pages/CityGuide/entertainment/EntertainmentPage";
+import ProfilePage from "@/pages/Profile";
+import SydneyOfferPage from "@/pages/profile/SydneyOfferPage";
+import SydneyProfile from "@/pages/profile/SydneyProfile";
 const Layout = () => (
   <div className="flex flex-col min-h-screen w-full bg-white">
-    <Header />
+    
     <main className="flex-grow flex justify-center w-full">
       <Outlet />
     </main>
@@ -42,11 +44,29 @@ export const router = createBrowserRouter([
       {
         path: "/cityguide",
         element: <CityGuide />,
+
+      },
+      {
+        path: "/profile",
+        element: <ProfilePage />,
+      },
+     
+      {
+        path: "/offers",
+        element: <SydneyOfferPage />,
+
+      },
+      {
+        path: "/sydney",
+        element: <SydneyProfile />,
       },
       {
         path: "/cityguide/nightlife",
         element: <NightlifePage />,
       },
+
+
+
       {
         path: "/cityguide/article",
         element: <ArticlePage />,
@@ -59,8 +79,13 @@ export const router = createBrowserRouter([
         path: "/cityguide/markets",
         element: <MarketPage />,
       },
+      {
+        path: "/cityguide/entertainment",
+        element: <EntertainmentPage />,
+      },
     ],
   },
+
 ]);
 
 

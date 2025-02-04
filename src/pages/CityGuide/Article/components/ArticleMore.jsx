@@ -57,7 +57,14 @@ export default function ArticleMore() {
     <div className="max-w-[1120px] mx-auto px-4 max-sm:px-2">
       <article className="w-[960px] max-md:w-full -ml-[125px] max-lg:ml-0">
         {articlesData.map((article, index) => (
-          <ArticleContent key={index} {...article} />
+          <div
+            key={index}
+            className={`${
+              index >= 2 ? "max-md:hidden" : "block"
+            }`}
+          >
+            <ArticleContent {...article} />
+          </div>
         ))}
       </article>
     </div>

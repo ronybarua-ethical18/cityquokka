@@ -1,17 +1,19 @@
-import React from 'react'
+
 import Footer from '@/components/layout/Footer'
 import Hero from '@/pages/Business/components/Hero'
 import Features from '@/pages/Business/components/Features'
+import Navbar from '@/components/layout/Navbar'
 
 export default function BusinessPage() {
     return (
-        <div className='flex flex-col min-h-screen bg-white'>
-            <div className='flex flex-col self-center w-full max-w-[1120px] max-md:max-w-full bg-white flex-grow'>
+        <div className='flex flex-col w-full max-w-[390px] md:max-w-[1120px] '> <Navbar />
+
+            <div className='flex flex-col w-full max-w-[390px] md:max-w-[1120px] px-2 max-md:px-4 bg-white'>
 
                 <Hero />
                 <Features />
-                <Footer />
-            </div>
+                
+            </div><Footer />
         </div>
     )
 }
