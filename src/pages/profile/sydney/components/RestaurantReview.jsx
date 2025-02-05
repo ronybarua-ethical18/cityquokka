@@ -13,8 +13,8 @@ const RestaurantCard = ({
 }) => (
   <div className="relative flex flex-col sm:flex-row items-start sm:items-center p-4 border-b border-gray-200 gap-3 sm:gap-4">
     {/* ON Button at Top Right */}
-    <div className="absolute top-5 right-3 bg-gray-100 px-2 py-1 rounded text-sm flex items-center gap-1">
-      ON <MapPin size={16} className="text-red-500" />
+    <div className="absolute top-5 right-3 bg-gray-100 px-2 py-1 rounded-full border-2 border-black text-sm flex items-center gap-1">
+      ON <MapPin size={16} className="text-red-500 fill-red-5" />
     </div>
 
     {/* Image Section */}
