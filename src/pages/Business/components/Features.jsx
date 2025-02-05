@@ -1,5 +1,5 @@
 import React from 'react';
-import dividerIcon from '../../assets/divider.svg';
+import dividerIcon from '../../../assets/divider.svg';
 
 const FeatureCard = ({ title, backgroundColor, borderColor }) => {
   return (
@@ -15,13 +15,13 @@ const Features = () => {
   const topFeatures = [
     { title: "City Quokka publishes an independent review of your business at no cost ", backgroundColor: "bg-[#FFB200]", borderColor: "border-[#FFB200]" },
     { title: "Send notifications to users who follow your business", backgroundColor: "bg-[#A97BF3]", borderColor: "border-[#A97BF3]" },
-    { title: "Send notifications to users who follow your business", backgroundColor: "bg-[#00CA44]", borderColor: "border-[#00CA44]" },
+    { title: "Receive free analytics about your business", backgroundColor: "bg-[#00CA44]", borderColor: "border-[#00CA44]" },
   ];
 
   const bottomFeatures = [
-    { title: "Send notifications to users who follow your business", backgroundColor: "bg-[#00CA44]", borderColor: "border-[#00CA44]" },
-    { title: "Send notifications to users who follow your business", backgroundColor: "bg-[#FFB200]", borderColor: "border-[#FFB200]" },
-    { title: "Send notifications to users who follow your business", backgroundColor: "bg-[#A97BF3]", borderColor: "border-[#A97BF3]" }
+    { title: "Design a deal that works for your business", backgroundColor: "bg-[#00CA44]", borderColor: "border-[#00CA44]" },
+    { title: "City Quokka selects which of our users will receive your offer", backgroundColor: "bg-[#FFB200]", borderColor: "border-[#FFB200]" },
+    { title: "You receive a pre-agreed number of new customers", backgroundColor: "bg-[#A97BF3]", borderColor: "border-[#A97BF3]" }
   ];
 
   return (

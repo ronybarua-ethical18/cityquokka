@@ -50,24 +50,29 @@ const Carousel = () => {
             />
           </button>
 
-          <div className="grid grid-cols-3 gap-4 w-full">
+          <div className="flex w-full overflow-hidden">
             {slides.map((slide, index) => (
               <div
                 key={slide.id}
-                className={`flex-shrink-0 w-full transition-transform duration-300 ${
+                className={`flex-shrink-0 w-full md:w-1/3 transition-transform duration-300 ${
                   index === currentIndex ? "scale-100" : "scale-95"
                 }`}
+                style={{
+                  display: index === currentIndex || window.innerWidth >= 768
+                    ? "block"
+                    : "none",
+                }}
               >
-                <div className="overflow-hidden rounded-[6px]">
+                <div className="overflow-hidden rounded-[6px] mx-auto max-w-[288px]">
                   <img
                     src={slide.image}
                     alt={slide.title}
                     width={288}
                     height={138}
-                    className="object-cover"
+                    className="object-cover w-full"
                   />
                 </div>
-                <p className="text-xs mt-2 text-black max-w-[270px]">
+                <p className="text-black text-justify font-inter text-[16px] font-[600] max-w-[270px] mx-auto">
                   {slide.title}
                 </p>
               </div>
