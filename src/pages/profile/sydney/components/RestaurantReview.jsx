@@ -25,8 +25,10 @@ const RestaurantCard = ({
     <div className="flex-grow w-full">
       <div className="flex items-center justify-between">
         <h3 className="font-medium text-lg truncate">{name}</h3>
-        <div className="bg-gray-100 px-2 py-1 rounded text-sm">ON</div>
+        <div className="bg-gray-100 px-2 py-1 rounded text-sm flex items-center gap-2">ON <MapPin size={16} className="text-red-500 flex-shrink-0" /></div>
       </div>
+
+
 
       <div className="flex flex-wrap items-center text-sm space-x-2 mt-1">
         <span className="font-medium">{rating}</span>
@@ -50,7 +52,7 @@ const RestaurantCard = ({
         <span>{location}</span>
         <span className="mx-2">-</span>
         <div className="flex items-center">
-          <MapPin size={14} className="mr-1" />
+          <MapPin size={14} className="mr-1 " />
           <span>Location</span>
         </div>
       </div>
@@ -108,8 +110,9 @@ const RestaurantList = () => {
       <div className="w-full max-w-[800px] mx-auto bg-white shadow-sm rounded-lg">
         <div className="flex items-center justify-end p-4 border-b border-gray-200">
           <div className="flex items-center gap-2"><h2 className="font-medium text-lg">Show All</h2>
-            <MapPin size={18} className="text-gray-500" />
+            <MapPin size={18} className="text-red-500" />
             
+
           </div>
         </div>
         <div className="pr-4 sm:pr-6">

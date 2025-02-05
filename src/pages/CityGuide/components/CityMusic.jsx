@@ -3,17 +3,41 @@ import musicImage from "../../../assets/Music.png";
 
 export default function CityMusic() {
   return (
-    <div className="flex flex-col sm:flex-row mt-8 mb-6"> {/* Only reverse order on small screens */}
+    <div className="flex flex-col sm:flex-row mt-8 mb-6 pt-10">
+      {/* Image Div - shown on the left in desktop view */}
+      <div className="hidden sm:flex w-full sm:w-1/2 flex-grow flex-col order-1 sm:order-1">
+        <img
+
+          src={musicImage}
+          alt="Music preview"
+          className="w-full h-[375px] object-cover sm:rounded-l-[6px] sm:rounded-r-none rounded-b-[6px] sm:rounded-b-none"
+        />
+      </div>
+
       {/* Green Div - Music Content */}
-      <div className="w-full sm:w-1/2 flex-grow flex flex-col h-auto sm:h-[413px] border-black pt-10 rounded-l-none sm:rounded-l-[6px] sm:rounded-r-none">
-        <div className="flex flex-col grow px-8 pb-6 pt-12 w-full text-xl font-bold tracking-tighter bg-[#00CA44] leading-none text-center text-black sm:rounded-l-[6px] sm:rounded-r-none max-md:px-5 max-md:mt-8 relative">
+      <div className="w-full sm:w-1/2 flex-grow flex flex-col h-auto sm:h-[413px] border-blac rounded-l-none sm:rounded-r-[6px] sm:rounded-l-none order-2 sm:order-2">
+        <div className="flex flex-col grow px-8 sm:max-h-[375px] pb-6 pt-12 w-full text-xl font-bold tracking-tighter bg-[#00CA44] leading-none text-center text-black sm:rounded-r-[6px] sm:rounded-l-none max-md:px-5 max-md:mt-8 relative">
+          {/* Floating Button - stays at top */}
+
           <div className="absolute top-0 left-6 translate-x-0 -translate-y-1/2 z-10 px-3 py-2 bg-white rounded-lg border-black border-solid border-[3px] whitespace-nowrap font-bold">
             MUSIC
           </div>
+
+          {/* Content Container with flex ordering */}
           <div className="flex flex-col justify-between h-full">
-            <div>
-              <p className="pt-[25px] text-[30px] font-bold text-[#000] text-justify font-inter leading-[128%] tracking-[-0.9px] capitalize">
-                Global flavors at your fingertips: A foodie's guide to UTS Food
+            {/* Image for mobile - shown at top */}
+            <div className="block sm:hidden -mx-8 max-md:-mx-5 -mt-12">
+              <img
+                src={musicImage}
+                alt="Music preview"
+                className="w-full h-[200px] object-cover"
+              />
+            </div>
+
+            {/* Text Content */}
+            <div className="mt-6">
+              <p className="text-[30px] font-bold text-[#000] text-justify font-inter leading-[128%] tracking-[-0.9px] capitalize">
+                Global flavors at your fingertips: A foodie&apos;s guide to UTS Food
                 outlets
               </p>
               <br />
@@ -26,18 +50,8 @@ export default function CityMusic() {
                 buildings.
               </p>
             </div>
-            <div></div>
           </div>
         </div>
-      </div>
-
-      {/* Image Div */}
-      <div className="w-full sm:w-1/2 flex-grow flex flex-col sm:mt-10 rounded-none sm:rounded-l-[6px] sm:rounded-r-none">
-        <img
-          src={musicImage}
-          alt="Music preview"
-          className="w-full h-[375px] object-cover sm:rounded-l-[6px] sm:rounded-r-none rounded-b-[6px] sm:rounded-b-none"
-        />
       </div>
     </div>
   );

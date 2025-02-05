@@ -13,11 +13,11 @@ export default function MyProfile() {
             <div className="mt-6 space-y-6 flex flex-col justify-between h-full">
               <div className="flex flex-col sm:flex-row items-start w-full">
                 {/* Avatar */}
-                <div className="relative w-[188px] h-[188px] rounded-full bg-gray-300 z-10 sm:mr-6 mx-auto sm:mx-0 mb-6 sm:mb-0">
+                <div className="relative flex-shrink-0 w-[188px] h-[188px] overflow-hidden rounded-[50%] bg-gray-300 z-10 sm:mr-12 mx-auto sm:mx-0 mb-6 sm:mb-0">
                   <img
                     src={PorfileAvatar}
                     alt="Avatar"
-                    className="w-full h-full rounded-full object-cover"
+                    className="w-[188px] h-[188px] rounded-[50%] object-cover"
                   />
                 </div>
   

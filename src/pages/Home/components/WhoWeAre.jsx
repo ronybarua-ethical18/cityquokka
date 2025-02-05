@@ -7,7 +7,14 @@ export default function WhoWeAre() {
   return (
     <div className="my-16 md:my-28 max-w-full p-4">
       {/* Grid Container for All 6 Items */}
-      <div className="grid grid-cols-3 gap-2 md:gap-5">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-5 relative">
+        {/* Mobile WHO ARE WE button - Overlay */}
+        <div className="absolute md:hidden top-[-10px] left-1/2 -translate-x-1/2 z-20">
+          <div className="px-3 py-2 bg-black rounded-md border-white border-solid border-[1px] outline outline-[2px] outline-white text-[#FFB200] text-xs whitespace-nowrap">
+            WHO ARE WE
+          </div>
+        </div>
+
         {/* First Section */}
         <div className="flex flex-col w-full">
           <div className="flex flex-col grow justify-center items-center px-2 md:px-4 py-3 md:py-8 w-full bg-green-500 rounded-lg border-black border-solid border-[2px] md:border-[3px]">
@@ -22,13 +29,13 @@ export default function WhoWeAre() {
         {/* Second Section */}
         <div className="flex flex-col w-full relative">
           <div className="flex flex-col grow px-2 md:px-4 py-3 md:py-8 w-full text-lg md:text-2xl font-bold tracking-tighter leading-none text-center text-black uppercase bg-yellow-500 rounded-lg border-black border-solid border-[2px] md:border-[3px] relative">
-            {/* Floating Button */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 px-2 md:px-3 py-1 md:py-2 bg-black rounded-md md:rounded-lg border-white border-solid border-[1px] md:border-2 outline outline-[2px] md:outline-[3px] outline-white whitespace-nowrap text-[#FFB200] text-xs md:text-base">
+            {/* Floating Button - Only show on desktop */}
+            <div className="hidden md:block absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 px-3 py-2 bg-black rounded-lg border-white border-solid border-2 outline outline-[3px] outline-white whitespace-nowrap text-[#FFB200] text-base">
               WHO ARE WE
             </div>
 
             {/* Centered Image */}
-            <div className="flex justify-center mt-8 md:mt-16 pt-1 md:pt-3">
+            <div className="flex justify-center mt-4 md:mt-16 pt-1 md:pt-3">
               <img 
                 src={item2} 
                 alt="Item 2" 
