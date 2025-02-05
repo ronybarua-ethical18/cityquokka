@@ -48,7 +48,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/profile",
-        element: <ProfilePage />,
+        element:<SydneyProfile /> 
       },
      
       {
@@ -58,7 +58,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/sydney",
-        element: <SydneyProfile />,
+        element: <ProfilePage />,
       },
       {
         path: "/cityguide/nightlife",
