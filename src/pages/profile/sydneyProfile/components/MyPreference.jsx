@@ -16,7 +16,7 @@ export default function MyPreference() {
     cursor: 'pointer',
     color: '#000',
     fontFamily: 'Inter',
-    fontSize: '20px',
+    fontSize: '24px',
     fontStyle: 'normal',
     fontWeight: 375,
     lineHeight: 'normal',
@@ -30,9 +30,10 @@ export default function MyPreference() {
   const disabledButtonStyle = {
     ...buttonStyle,
     background: 'rgba(255, 255, 255, 0.5)',
-    color: 'gray',
+    color: 'black',
     cursor: 'not-allowed',
   };
+
 
   return (
     <div className="flex flex-col sm:flex-row mt-10 mb-8 pt-4">

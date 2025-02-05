@@ -72,7 +72,7 @@ const Carousel = () => {
                     className="object-cover w-full"
                   />
                 </div>
-                <p className="text-xs mt-2 text-black max-w-[270px] mx-auto">
+                <p className="text-black text-justify font-inter text-[16px] font-[600] max-w-[270px] mx-auto">
                   {slide.title}
                 </p>
               </div>
