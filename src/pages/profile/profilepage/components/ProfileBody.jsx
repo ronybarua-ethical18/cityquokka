@@ -1,5 +1,4 @@
 import React from "react";
-import Map from "../../../../assets/map.png";
 
 export default function ProfileBody() {
   const myListItems = [
@@ -7,7 +6,7 @@ export default function ProfileBody() {
     "ACTIVITIES",
     "DESTINATIONS",
     "SERVICES",
-    "John’s fave brunch spots",
+    "John's fave brunch spots",
     "music festivals 24/25",
   ];
 
@@ -37,12 +36,15 @@ export default function ProfileBody() {
         </div>
       </div>
 
-      {/* Right Section - Image */}
+      {/* Right Section - Map */}
       <div className="w-full sm:w-[70%] h-[497px] flex-grow relative">
-        <img
-          src={Map}
-          alt="Map"
-          className="w-full h-full object-cover rounded-[6px]"
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26532.449767537553!2d150.844998!3d-33.77213185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129a3c5c1896a7%3A0x5017d681632c8e0!2sRooty%20Hill%20NSW%202766%2C%20Australia!5e0!3m2!1sen!2sbd!4v1738737160210!5m2!1sen!2sbd"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="w-full h-full rounded-[6px]"
         />
       </div>
     </div>

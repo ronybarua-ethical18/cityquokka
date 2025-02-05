@@ -1,13 +1,22 @@
 import React from "react";
-import melbourneImg from "@/assets/Melbourne.png";
+import MelbourneCup from "@/assets/MelbourneCup.png";
 import arrowDownIcon from "@/assets/mingcute_arrows-down-line.svg";
 
 export default function Body() {
   return (
     <div className="flex self-center w-full max-w-[1122px] bg-white pt-16 flex-row max-md:flex-col p-4">
-      <div className="flex justify-center w-full max-md:w-full max-md:mb-0 flex-grow">
+      <div className="flex justify-center w-full max-md:w-full max-md:mb-0 flex-grow relative">
+        <div className="absolute top-12 left-8 transform z-10 sm:pt-10 max-w-[330px] md:max-w-[450px]">
+          <h1 className="text-[#00CA44] text-[40px] md:text-[60px] font-inter font-black mb-2 text-left [-webkit-text-stroke:2px_black] md:[-webkit-text-stroke:4px_black] leading-[74%] tracking-[-2px] md:tracking-[-3.509px] uppercase sm:pb-4">
+            MELBOURNE <br /> CUP
+          </h1>
+
+          <h2 className="text-[#FFB200] text-[30px] md:text-[50px] font-inter font-black mb-2 text-left [-webkit-text-stroke:2px_black] md:[-webkit-text-stroke:4px_black] leading-[74%] tracking-[-2px] md:tracking-[-3.509px] uppercase">
+            The race that stops the nation
+          </h2>
+        </div>
         <img
-          src={melbourneImg}
+          src={MelbourneCup}
           alt="Melbourne cityscape"
           width={685}
           height={543}

@@ -1,4 +1,4 @@
-import React from "react";
+
 import marketHeaderImage from "../../../../assets/MarketHeader.png"
 import SocialActions from "@/components/shared/SocialActions"
 
