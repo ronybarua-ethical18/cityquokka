@@ -12,7 +12,7 @@ export default function ProfileBody() {
       name: "Destinations",
       subItems: [
         "Cafes",
-        <strong key="restaurants">Restaurants</strong>, // Restaurants bold
+        <strong key="restaurants">Restaurants</strong>,
         "Bars",
       ],
     },
@@ -31,7 +31,7 @@ export default function ProfileBody() {
       <div className="absolute sm:static top-0 left-0 w-[220px] sm:w-[250px] z-10 h-[550px] sm:h-auto -mx-8 sm:mx-0">
         <div className="flex flex-col h-full px-2 pb-6 pt-12 w-full bg-[#FFB200] rounded-[6px] relative">
           {/* "My List" Title */}
-          <div className="absolute top-0 left-6 -translate-y-1/2 z-10 px-3 py-2 bg-white rounded-lg border-black border-solid border-[3px] whitespace-nowrap font-bold">
+          <div className="absolute top-0 left-6 -translate-y-1/2 z-10 px-3 py-2 bg-white rounded-lg border-black border-solid border-[3px] whitespace-nowrap font-bold text-lg"> {/* Increased font size here */}
             My List
           </div>
 
@@ -52,7 +52,7 @@ export default function ProfileBody() {
                     }`}
                   />
                   <div className="flex-1">
-                    <span className="text-sm font-semibold text-black hover:text-white whitespace-normal leading-5">
+                    <span className="text-base font-semibold text-black hover:text-white whitespace-normal leading-5"> {/* Increased font size here */}
                       {typeof item === "string" ? item : item.name}
                     </span>
                   </div>
@@ -61,7 +61,7 @@ export default function ProfileBody() {
 
                 {/* Sub-Items */}
                 {typeof item === "object" && item.subItems && openDropdown === index && (
-                  <div className="ml-6 mt-2 space-y-2">
+                  <div className="ml-12 mt-2 space-y-2">
                     {item.subItems.map((subItem, subIndex) => (
                       <div key={subIndex}>
                         <Button
@@ -70,7 +70,7 @@ export default function ProfileBody() {
                         >
                           <div className="flex-1">
                             <span
-                              className={`text-sm font-normal text-black hover:text-white whitespace-normal leading-5 ${
+                              className={`text-base font-normal text-black hover:text-white whitespace-normal leading-5 ${
                                 subItem === "Restaurants" ? "font-extrabold" : ""
                               }`}
                             >
