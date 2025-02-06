@@ -4,7 +4,7 @@ import dividerIcon from '../../../assets/divider.svg';
 const FeatureCard = ({ title, backgroundColor, borderColor }) => {
   return (
     <div className={`flex flex-col grow justify-center px-12 py-14 w-full text-center text-black ${backgroundColor} rounded-lg border-black border-solid border-[3px] max-md:px-5 max-md:mt-8`}>
-      <div className={`px-9 h-[196px] flex items-center justify-center bg-white rounded-lg ${borderColor} border-solid border-[3px] max-md:px-5 text-[18px] font-inter font-[700] leading-[33px] tracking-[-0.9px] text-center`}>
+      <div className={`px-9 h-[196px] flex items-center justify-center bg-white rounded-lg ${borderColor} border-solid border-[3px] max-md:px-5 text-[21px] font-inter font-[650] leading-[33px] tracking-[-1px] text-center`}>
         {title}
 
 
